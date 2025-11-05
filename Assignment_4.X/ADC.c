@@ -1,3 +1,9 @@
+/*
+ * File:   ADC.c
+ * Author: Mazin Taher, Ebad Rehman, Taha Zuberi
+ *
+ * Created on October 31, 2025, 8:59 PM
+ */
 #include "xc.h"
 #include "ADC.h"
 

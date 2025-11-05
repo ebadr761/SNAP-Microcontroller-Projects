@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 # ===== CONFIGURATION =====
-SERIAL_PORT = '/dev/cu.usbserial-0001'  # Change if needed
+SERIAL_PORT = '/dev/cu.usbserial-0001'
 BAUD_RATE = 4800
 COLLECTION_TIME = 10  # seconds
 VREF = 3.3  # Reference voltage

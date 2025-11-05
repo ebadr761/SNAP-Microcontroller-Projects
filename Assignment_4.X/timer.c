@@ -1,3 +1,9 @@
+/*
+ * File:   timer.c
+ * Author: Mazin Taher, Ebad Rehman, Taha Zuberi
+ *
+ * Created on October 31, 2025, 8:50 PM
+ */
 #include "timer.h"
 #include <xc.h>
 
@@ -31,5 +37,5 @@ uint8_t timer1_flag_check(void) {
 
 void timer1_flag_clear(void) {
     IFS0bits.T1IF = 0;  // Clear the Timer1 interrupt flag
-    TMR1 = 0;           // Optional: reset timer to 0 for more accuracy
+    TMR1 = 0;           // reset timer to 0 for more accuracy
 }

@@ -1,3 +1,9 @@
+/* 
+ * File: timer.h
+ * Author: Ebad Rehman, Mazin Taher, Taha Zuberi
+ * Comments: None
+ * Revision history: Created on october 31st 8:56 PM
+ */
 #ifndef TIMER_H
 #define TIMER_H
 
