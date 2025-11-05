@@ -103,7 +103,6 @@ int main(void) {
     Disp2String(">>> Mode 0 - Bar Graph <<<\r\n\r\n");
     
     while(1) {
-        
         // Check for button press (PB1 on RB7)
         if (PORTBbits.RB7 == 0 && button_prev == 1) {
             // Button just pressed! Toggle mode
@@ -147,6 +146,7 @@ int main(void) {
             // Clear timer flag
             timer1_flag_clear();
         }
+        Idle();
     }
     
     return 0;

@@ -135,11 +135,7 @@ def main():
     print("\n" + "="*50)
     print("ADC Data Collection and Plotting")
     print("="*50)
-    
-    # Collect data
-    timestamps, adc_values, voltages = collect_adc_data(
-        SERIAL_PORT, BAUD_RATE, COLLECTION_TIME
-    )
+    timestamps, adc_values, voltages = collect_adc_data(SERIAL_PORT, BAUD_RATE, COLLECTION_TIME) #collect data
     
     if timestamps is None or len(timestamps) == 0:
         print("No data collected. Exiting.")
@@ -159,12 +155,7 @@ def main():
     print(f"\nData saved to: {csv_filename}")
     
     # Plot data
-    print("\nGenerating plots...")
     plot_data(timestamps, adc_values, voltages)
-    
-    print("\n" + "="*50)
-    print("All done!")
-    print("="*50 + "\n")
 
 if __name__ == "__main__":
     main()

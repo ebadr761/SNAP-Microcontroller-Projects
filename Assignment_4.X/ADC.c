@@ -6,11 +6,10 @@ uint16_t do_ADC(void) {
     
     /********** STEP 1: CONFIGURE ADC PINS **********/
     // For pin 8 (prep): Configure AN5 as analog input
-    // For pin 15 (assignment): You'll change this to the appropriate ANx
+    // For pin 15 (assignment)
     
     AD1PCFG = 0xFFFF;        // Start with all pins as digital
-    AD1PCFGbits.PCFG12 = 0;   // Set AN5 (pin 8) as ANALOG (0 = analog)
-    // Note: For the assignment, you'll change this to the correct pin
+    AD1PCFGbits.PCFG12 = 0;   // Set  (pin 15) as ANALOG (0 = analog)
     
     /********** STEP 2: CONFIGURE AD1CON1 (Main Control) **********/
     AD1CON1bits.ADON = 0;    // Turn OFF ADC during configuration
