@@ -1,7 +1,7 @@
 /*
  * File:   ADC.c
  * Author: Mazin Taher, Ebad Rehman, Taha Zuberi
- *
+ * (ENSURE that the hardware is setup correctly and ADC pin connected to PIC24F snap)
  * Created on October 31, 2025, 8:59 PM
  */
 #include "xc.h"
